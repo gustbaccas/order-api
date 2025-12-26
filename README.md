@@ -68,4 +68,3 @@ API REST para gerenciamento de ordens, desenvolvida com **Spring Boot**, aplican
 GET /orders?status=OPEN
 GET /orders?status=PAID
 GET /orders?status=CANCELLED
-GET /orders?status=CANCELLED
