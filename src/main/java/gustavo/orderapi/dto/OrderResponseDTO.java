@@ -10,14 +10,12 @@ public class OrderResponseDTO {
     private String customerName;
     private BigDecimal totalValue;
     private Enum status;
-    private Boolean active;
 
     public OrderResponseDTO(OrderEntity order) {
         this.id = order.getId();
         this.customerName = order.getCustomerName();
         this.totalValue = order.getTotalValue();
         this.status = order.getStatus();
-        this.active = order.getActive();
     }
 
     public Integer getId() {
@@ -52,11 +50,4 @@ public class OrderResponseDTO {
         this.status = status;
     }
 
-    public Boolean getActive() {
-        return active;
-    }
-
-    public void setActive(Boolean active) {
-        this.active = active;
-    }
 }

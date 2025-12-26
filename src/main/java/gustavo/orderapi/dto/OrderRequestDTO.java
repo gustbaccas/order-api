@@ -11,7 +11,6 @@ public class OrderRequestDTO {
 
     private String customerName;
     private BigDecimal totalValue;
-    private Boolean active;
     private OrderStatus status;
 
 
@@ -39,13 +38,6 @@ public class OrderRequestDTO {
         this.status = status;
     }
 
-    public Boolean getActive() {
-        return active;
-    }
-
-    public void setActive(Boolean active) {
-        this.active = active;
-    }
 
     public OrderEntity toEntity(){
         OrderEntity order = new OrderEntity();

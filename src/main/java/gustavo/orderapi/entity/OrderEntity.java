@@ -24,9 +24,6 @@ public class OrderEntity {
     @Enumerated(EnumType.STRING)
     private OrderStatus status;
 
-    @Column(nullable = false)
-    private Boolean active;
-
     public Integer getId() {
         return id;
     }
@@ -59,11 +56,4 @@ public class OrderEntity {
         this.status = status;
     }
 
-    public Boolean getActive() {
-        return active;
-    }
-
-    public void setActive(Boolean active) {
-        this.active = active;
-    }
 }

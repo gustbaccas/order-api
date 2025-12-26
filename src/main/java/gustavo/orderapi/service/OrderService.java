@@ -19,7 +19,6 @@ public class OrderService {
     }
 
     public OrderEntity create(OrderEntity order) {
-        order.setActive(true);
         order.setStatus(OrderStatus.OPEN);
 
         return repository.save(order);
@@ -51,7 +50,6 @@ public class OrderService {
         }
 
         order.setStatus(OrderStatus.PAID);
-        order.setActive(false);
 
         return repository.save(order);
     }
